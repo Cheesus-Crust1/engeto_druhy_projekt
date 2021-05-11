@@ -53,11 +53,11 @@ def bulls_n_cows():
                     bulls += 1
                 elif tip[index] in cislo:
                     cows += 1
-            if bulls > 1:
+            if bulls > 1 or bulls == 0:
                 print(f"{bulls} bulls", end=" ")
             else:
                 print(f"{bulls} bull", end=" ")
-            if cows > 1:
+            if cows > 1 or cows == 0:
                 print(f"{cows} cows")
             else:
                 print(f"{cows} cow")
